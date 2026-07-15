@@ -1,0 +1,29 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/admin/RiderProjects/Battleship/Battleship/wwwroot/Battleship.lib.module.js",
+      "PackagePath": "staticwebassets/Battleship.93kgvte51m.lib.module.js"
+    },
+    {
+      "Id": "obj/Debug/net11.0/staticwebassets/Battleship.PackageAssets.json",
+      "PackagePath": "build\\Battleship.PackageAssets.json"
+    },
+    {
+      "Id": "obj/Debug/net11.0/staticwebassets/msbuild.Battleship.Microsoft.AspNetCore.StaticWebAssets.targets",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.targets"
+    },
+    {
+      "Id": "obj/Debug/net11.0/staticwebassets/msbuild.build.Battleship.targets",
+      "PackagePath": "build\\Battleship.targets"
+    },
+    {
+      "Id": "obj/Debug/net11.0/staticwebassets/msbuild.buildMultiTargeting.Battleship.targets",
+      "PackagePath": "buildMultiTargeting\\Battleship.targets"
+    },
+    {
+      "Id": "obj/Debug/net11.0/staticwebassets/msbuild.buildTransitive.Battleship.targets",
+      "PackagePath": "buildTransitive\\Battleship.targets"
+    }
+  ],
+  "ElementsToRemove": []
+}

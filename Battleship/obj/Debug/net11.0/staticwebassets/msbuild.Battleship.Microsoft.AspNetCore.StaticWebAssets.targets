@@ -1,0 +1,9 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetPackageManifest Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)Battleship.PackageAssets.json'))">
+      <SourceId>Battleship</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <PackageRoot>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..'))</PackageRoot>
+    </StaticWebAssetPackageManifest>
+  </ItemGroup>
+</Project>
