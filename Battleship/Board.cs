@@ -11,14 +11,13 @@ public class Board
     public Board(int rows, int columns, Ship ship)
     {
         if (rows<=0)
-            throw new ArgumentException("Row7" +
-                                        "s cannot be negative.");
+            throw new ArgumentException("кол-во строк не может быть отрицательным, или равным нулю");
         if (columns<=0)
-            throw new ArgumentException("Columns cannot be negative.");
+            throw new ArgumentException("кол-во колонок не может быть отрицательным, или равным нулю");
         if (ship.Position.X + ship.Lenght > columns)
-            throw new ArgumentException("Ship position is out of bounds.");
+            throw new ArgumentException("Позиция корабля за пределами доски.");
         if (ship.Position.Y >= rows)
-            throw new ArgumentException("Ship is outside the board.");
+            throw new ArgumentException("Позиция корабля не вмещается в доску");
 
         Rows = rows;
         Columns = columns;
