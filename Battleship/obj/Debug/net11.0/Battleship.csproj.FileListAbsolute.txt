@@ -83,3 +83,4 @@
 /Users/admin/RiderProjects/Battleship/Battleship/obj/Debug/net11.0/Battleship.MvcApplicationPartsAssemblyInfo.cache
 /Users/admin/RiderProjects/Battleship/Battleship/obj/Debug/net11.0/Battleship.csproj.Up2Date
 /Users/admin/RiderProjects/Battleship/Battleship/obj/Debug/net11.0/Battleship.genruntimeconfig.cache
+/Users/admin/RiderProjects/Battleship/Battleship/obj/Debug/net11.0/Battleship.sourcelink.json

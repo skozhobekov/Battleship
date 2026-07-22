@@ -7,10 +7,10 @@ public class Position
 
     public Position(int x, int y)
     {
-        if (x <= 0)
+        if (x < 0)
             throw new ArgumentException("X не может быть отрицательным");
 
-        if (y <= 0)
+        if (y <0)
             throw new ArgumentException("Y не может быть отрицательным");
 
         X = x;
