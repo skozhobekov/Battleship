@@ -16,7 +16,7 @@ public class Game
             Console.WriteLine("Компьютер создал корабль:");
             Console.WriteLine($"X = {opponentBoard.Ship.Position.X}");
             Console.WriteLine($"Y = {opponentBoard.Ship.Position.Y}");
-            Console.WriteLine($"Length = {opponentBoard.Ship.Lenght}");
+            Console.WriteLine($"Length = {opponentBoard.Ship.Length}");
 
             Random random = new Random();
             
@@ -167,7 +167,7 @@ public class Game
                      
                      Console.WriteLine($"{hits} hits ");
                      
-                     bool isSunk = hits == ship.Lenght;
+                     bool isSunk = hits == ship.Length;
                      if (isSunk)
                      {
                          Console.WriteLine("Ship is Sunk");

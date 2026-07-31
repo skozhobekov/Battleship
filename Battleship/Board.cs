@@ -19,7 +19,7 @@ public class Board
             throw new ArgumentException("кол-во строк не может быть отрицательным, или равным нулю");
         if (columns<=0)
             throw new ArgumentException("кол-во колонок не может быть отрицательным, или равным нулю");
-        if (ship.Position.X + ship.Lenght > columns)
+        if (ship.Position.X + ship.Length > columns)
             throw new ArgumentException("Позиция корабля за пределами доски.");
         if (ship.Position.Y >= rows)
             throw new ArgumentException("Позиция корабля не вмещается в доску");
@@ -41,7 +41,7 @@ public class Board
     {
         if (shotPosition.Y == Ship.Position.Y &&
             shotPosition.X >= Ship.Position.X &&
-            shotPosition.X < Ship.Position.X + Ship.Lenght)
+            shotPosition.X < Ship.Position.X + Ship.Length)
         {
             return Ship;
         }
