@@ -7,9 +7,14 @@ public class Board
     public int Columns { get; private set; }
 
     public Ship Ship { get; private set; }
+    
+    public List<Ship> Ships { get; private set; } 
 
     public Board(int rows, int columns, Ship ship)
     {
+        if (ship == null) 
+            throw new ArgumentNullException(nameof(ship));
+        
         if (rows<=0)
             throw new ArgumentException("кол-во строк не может быть отрицательным, или равным нулю");
         if (columns<=0)
@@ -26,11 +31,22 @@ public class Board
 
     public bool HasShip(Position shotPosition)
     {
-        return shotPosition.Y == Ship.Position.Y &&
-               shotPosition.X >= Ship.Position.X &&
-               shotPosition.X < Ship.Position.X + Ship.Lenght;
+        return FindShip(shotPosition) != null;
     }
     
+//4. Для создания Shot нужно добавить логику, которая определяет не просто факт попадания, а конкретный корабль, в который попали.
+//Например, можно создать метод FindShip(Position position), который возвращает Ship?.
+
+    public Ship? FindShip(Position shotPosition)
+    {
+        if (shotPosition.Y == Ship.Position.Y &&
+            shotPosition.X >= Ship.Position.X &&
+            shotPosition.X < Ship.Position.X + Ship.Lenght)
+        {
+            return Ship;
+        }
+        return null;
+    }
 
     public bool IsInside(Position shotPosition)
     {
